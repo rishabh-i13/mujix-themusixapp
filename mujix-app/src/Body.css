@@ -1,0 +1,123 @@
+.body{
+    flex: 0.80;
+    height: 100vh;
+    color: white;
+    padding: 30px;
+    overflow-y: overlay;
+    background: linear-gradient(rgb(0, 169, 169),rgb(0,0,0,1));
+}
+.body::-webkit-scrollbar{
+    display: none;
+}
+
+.body__info{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+.body__infoText{
+    flex:1;
+}
+.body__info>img{
+    height: 20vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgb(0,0,0,0.5);
+}
+
+.body__infoText>h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.body__infoText>p{
+    font-size: 14px;
+}
+
+.body__icons{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.body__icons >.MuiSvgIcon-root{
+    margin-right: 30px;
+}
+
+.body__shuffle{
+  font-size: 70px !important;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.body__shuffle:hover {
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
+}
+.body__songs{
+    margin: 20px -30px;
+}
+  
+
+
+/* CSS for Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.header__left{
+    flex:0.6;
+    min-width: 300px;
+    background-color: white;
+    color:gray;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.header__left>input{
+    border: none;
+    width: 100%;
+}
+.header__left>h4{
+    margin-left: 10px;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* CSS FOR SongRow */
+
+.songRow{
+    margin-left: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.songRow:hover{
+    cursor: pointer;
+    background-color: black;
+    opacity: 0.8;
+}
+.songRow__info {
+    margin-left: 20px;
+  }
+  
+  .songRow__info > h1 {
+    font-size: 16px;
+  }
+  
+  .songRow__info > p {
+    font-size: 14px;
+    margin-top: 3px;
+    color: gray;
+  }
+  
+  .songRow__album {
+    height: 40px;
+    width: 40px;
+  }
